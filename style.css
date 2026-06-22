@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+:root {
+    --primary: #4c47a2
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Permanent Marker";
+}
+
+body {
+    margin: 20px;
+}
+
+#form {
+    padding: 20px;
+    border: 2px solid black;
+    label {
+        font-weight: bolder;
+        font-size: 20px;
+        display: block;
+    }
+    .row {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+    .form_group {
+        width: 100%;
+        margin: 10px 0;
+        input:not([type=checkbox]), select {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+        }
+    }
+
+    #btn_add {
+        border: 2px solid var(--primary);
+        padding: 5px 20px;
+        background-color: transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        color: var(--primary);
+        box-shadow: 2px 2px 2px 0 #ccc;
+        transition: 1s ease all;
+        transform: scale(1.05);
+        position: relative;
+    }
+    
+}
+
+#table_taches {
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: content-box;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 10px 0 #ccc;
+    tr.important {
+        background-color: #d02b2b3b;
+        td {
+            border: 2px dotted red;
+        }
+    }
+    
+    th {
+        background-color: var(--primary);
+        color: white;
+    }
+    th, td {
+        border: 1px solid black;
+        text-align: left;
+        padding: 5px 10px;
+        height: 30px;
+    }
+    .btn_supprimer {
+        border: 2px solid #d63131;
+        aspect-ratio: 1/1;
+        padding: 5px;
+        background-color: transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #d02b2b;
+        box-shadow: 2px 2px 2px 0 #ccc;
+        transition: 1s ease all;
+        transform: scale(1.05);
+    }
+
+    .btn_supprimer:active {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 #ccc;
+    }
+
+    .btn_supprimer:hover {
+        transition: unset;
+        color: #aa1d1d;
+        border-color: #aa1d1d;
+    }
+}

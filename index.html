@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+
+    <div id="form">
+        <div class="form_group">
+            <label for="input_name">Nom de la tâche</label>
+            <input id="input_name" type="text">
+        </div>
+        <div class="row">
+            <div class="form_group">
+                <label for="select_dev">Développeur</label>
+                <select id="select_dev">
+                <option value="Khun">Khun</option>
+                <option value="Mike">Mike</option>
+                <option value="Alex">Alex</option>
+                <option value="Ben">Ben</option>
+            </select>
+        </div>
+            <div class="form_group">
+                <label for="input_date">Date de Fin</label>
+                <input id="input_date" type="date">
+            </div>
+        </div>
+        <div class="form_group">
+            <label for="input_important">Tâche importante</label>
+            <input id="input_important" type="checkbox">
+        </div>
+
+        <div class="form_group">
+            <button id="btn_add">Ajouter</button>
+        </div>
+        
+    </div>
+
+    <div style="margin-top: 20px;">
+        <button id="btn_sort_asc">Trier par date (ASC)</button>
+        <button id="btn_sort_desc">Trier par date (DESC)</button>
+    </div>
+
+    <table id="table_taches">
+        <thead>
+            <tr>
+                <th>Tâche</th>
+                <th>Développeur</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="liste_taches">
+            
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
